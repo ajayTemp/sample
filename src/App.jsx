@@ -10,9 +10,10 @@ function App() {
         className="w-full h-screen duration-200"
         style={{ backgroundColor: color }}
       >
-        <div className="text-xl font-bold" style={{ textAlign: "center" }}>BG color change to : {color} </div>
+        <div className="text-2xl font-bold text-center">{import.meta.env.VITE_APPNAME}</div>
+        <div className="text-xl" style={{ textAlign: "center" }}>BG color change to : {color} </div>
 
-        <div className="fixed flex flex-wrap justify-center top-12 px-2 inset-x-2">
+        <div className="flex flex-wrap justify-center top-12 px-2 inset-x-2">
           <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-2xl">
             <button
               className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
